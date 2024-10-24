@@ -148,7 +148,10 @@ public class DbObjectSchema {
 	public Class<?> getJavaClass() {
 		return entityClass;
 	}
-	
+
+	public String getJavaClassSimpleName(){
+		return entityClass.getSimpleName();
+	}
 	/**
 	 * Returns the name of the Java class for the underlying `@Entity` this schema
 	 * corresponds to
